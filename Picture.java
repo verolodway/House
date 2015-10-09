@@ -63,7 +63,7 @@ public class Picture
         suelo.moveHorizontal(-310);
         suelo.changeSize(500);
         
-        sun.slowMoveVertical(110);
+       
         
     }
 
@@ -92,6 +92,13 @@ public class Picture
             window.changeColor("black");
             roof.changeColor("green");
             sun.changeColor("yellow");
+        }
+    }
+    public void moveSun()
+    {
+        if (sun != null)
+        {
+            sun.slowMoveVertical(110);
         }
     }
 }
