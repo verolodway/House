@@ -99,6 +99,11 @@ public class Picture
         if (sun != null)
         {
             sun.slowMoveVertical(110);
+            wall.changeColor("black");
+            window.changeColor("white");
+            roof.changeColor("black");
+            sun.changeColor("black");
+            suelo.changeColor("black");
         }
     }
 }
