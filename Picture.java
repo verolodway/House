@@ -17,6 +17,10 @@ public class Picture
     private Circle sun;
     private Square suelo;
     private Person persona;
+    private Circle copa1;
+    private Circle copa2;
+    private Square tronco;
+    private Square tronco1;
 
     /**
      * Constructor for objects of class Picture
@@ -116,4 +120,41 @@ public class Picture
       
     
     }   
+   public void crearArbol()
+   {  copa1 = new Circle();
+      copa1.moveHorizontal(60);
+      copa1.moveVertical(60);
+      copa1.changeColor("green");
+      copa1.makeVisible();
+      
+      copa2 = new Circle();
+      copa2.moveHorizontal(75);
+      copa2.moveVertical(60);
+      copa2.changeColor("green");
+      copa2.makeVisible();
+      
+      tronco = new Square();
+      tronco.moveHorizontal(11);
+      tronco.moveVertical(90);
+      tronco.changeColor("black");
+      tronco.changeSize(20);
+      tronco.makeVisible();
+      
+      tronco1 = new Square();
+      tronco1.moveHorizontal(11);
+      tronco1.moveVertical(110);
+      tronco1.changeSize(20);
+      tronco1.changeColor("black");
+      tronco1.makeVisible();
+    
+}   public void MoverArbol()
+ {
+     if (copa1 != null)
+     {
+       copa1.slowMoveHorizontal(100);
+       copa2.slowMoveHorizontal(100);
+       tronco.slowMoveHorizontal(100);
+       tronco1.slowMoveHorizontal(100);
+     }
+ }
 }
